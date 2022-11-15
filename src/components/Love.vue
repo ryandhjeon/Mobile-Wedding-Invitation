@@ -3,7 +3,7 @@
     <h1>Love</h1>
     <div class="container">
         <div class="title">두 사람에게 축하의 마음 전하는 방법</div>
-        <div>미국에서 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 형태의 마음을 받으면 더 의미 있을거라는 생각에 2가지 방법을 준비해 봤어요.</div>
+        <div>미국에서 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 다른 형태의 마음을 받으면 더 의미 있을거라는 생각에 준비해 봤어요.</div>
         <!-- <div class="one">
             <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요</div>
             <div class="love_button_list">
@@ -128,7 +128,7 @@
             <div>사용할 때마다 선물한 분들을 떠올리며 감사하는 마음을 오래도록 간직하고자 합니다. 아래 링크에 들어가셔서 Our Wish List 안에 선물하고 싶은 물건을 선택하신 뒤 직접 구매 후 발송해주시면 됩니다. </div>
             <div class="registry">
                 <a href="https://registry.theknot.com/ryan-jeon-hyewon-kim-december-2023-il/56941937" target="blank">
-                    <el-button :icon="Promotion" type="danger">Click here for registry</el-button>
+                    <el-button class="registry_button" :icon="Promotion" type="danger">Click here for registry</el-button>
                 </a>
             </div>
         </div>
@@ -202,9 +202,14 @@ async function copy(s) {
     .venmo {
         width: 20%;
     }
+    
     .registry {
         text-align: center;
         padding-top: 1em;
+    }
+    
+    .registry_button {
+        padding: 1em 0;
     }
 
     
