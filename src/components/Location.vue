@@ -85,7 +85,7 @@
     display: block;
 }
 .map__description-button{
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     margin: 1em 0;
 }
 
@@ -95,7 +95,7 @@
 .demo-tabs > .el-tabs__content {
   padding: 32px;
   color: #6b778c;
-  font-size: 32px;
+  /* font-size: 32px; */
   font-weight: 600;
   text-align: center;
 }
@@ -107,11 +107,11 @@
 .transportation__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
     margin: 1em 0;
 }
 .transportation__card {
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     color: #3c3c3c;
 }
 .transportation__card-subtitle {

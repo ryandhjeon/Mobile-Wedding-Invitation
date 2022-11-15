@@ -73,7 +73,7 @@
 }
 .rsvp__info {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .rsvp__calendar {
@@ -87,7 +87,6 @@
 
 .rsvp__button {
     margin: 1em 0;
-    font-size: 0.8em;
 }
 
 .rsvp__form {
@@ -99,7 +98,7 @@
     margin-bottom: 1em;
 }
 
-.rsvp__form-submit {
+/* .rsvp__form-submit {
     font-weight: bold;
-}
+} */
 </style>

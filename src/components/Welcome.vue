@@ -30,7 +30,19 @@ import leaf_right from "../assets/img/leaf_right.png"
 }
 
 .main__name {
-    font-size: 2.5em;
+    font-size: 2em;
+}
+
+@media (min-width: 480px) {
+    .main__name {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__name {
+        font-size: 1.8em;
+    }
 }
 
 .main__and {

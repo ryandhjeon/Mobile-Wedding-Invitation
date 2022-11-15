@@ -124,7 +124,7 @@
         </div>
 
         <div class="two">
-            <div class="two__title">둘째, 신혼집을 꾸리면서 갖고싶은 물건들을 적어보았어요. </div>
+            <div class="two__title">둘째, 신혼집을 꾸리고 싶은 물건들을 적어보았어요. </div>
             <div>사용할 때마다 선물한 분들을 떠올리며 감사하는 마음을 오래도록 간직하고자 합니다. 아래 링크에 들어가셔서 Our Wish List 안에 선물하고 싶은 물건을 선택하신 뒤 직접 구매 후 발송해주시면 됩니다. </div>
             <div class="registry">
                 <a href="https://registry.theknot.com/ryan-jeon-hyewon-kim-december-2023-il/56941937" target="blank">
@@ -168,7 +168,7 @@ async function copy(s) {
     }
 
     .el-button {
-        font-size: 0.8em;
+        /* font-size: 0.8em; */
         padding: 1em;
     }
 
@@ -186,7 +186,7 @@ async function copy(s) {
     }
 
     .one__card-title {
-        font-size: 0.7em;
+        /* font-size: 0.7em; */
     }
 
     .two {

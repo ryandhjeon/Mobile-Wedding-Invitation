@@ -6,7 +6,7 @@
 }
 
 main {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -50,6 +50,12 @@ h1 {
 
   main {
     width: 480px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+      width: 320px;
   }
 }
