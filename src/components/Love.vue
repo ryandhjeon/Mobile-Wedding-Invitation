@@ -57,10 +57,10 @@
         <div class="one">
             <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요</div>
             <div class="love_button_list">
-                <el-button @click="count = 1, copy(groom)" type="danger" autofocus>신랑</el-button>
-                <el-button @click="count = 2, copy(bride)" type="danger" autofocus>신부</el-button>
-                <el-button @click="count = 3, copy(groom_parent)" type="danger" autofocus>신랑혼주</el-button>
-                <el-button @click="count = 4, copy(bride_parent)" type="danger" autofocus>신부혼주</el-button>
+                <el-button @click="count = 1, copy(groom)" type="danger" >신랑</el-button>
+                <el-button @click="count = 2, copy(bride)" type="danger" >신부</el-button>
+                <el-button @click="count = 3, copy(groom_parent)" type="danger" >신랑혼주</el-button>
+                <el-button @click="count = 4, copy(bride_parent)" type="danger" >신부혼주</el-button>
             </div>
             <el-card class="one__card">
                 <div v-if="count === 1">     
@@ -128,7 +128,7 @@
             <div>사용할 때마다 선물한 분들을 떠올리며 감사하는 마음을 오래도록 간직하고자 합니다. 아래 링크에 들어가셔서 Our Wish List 안에 선물하고 싶은 물건을 선택하신 뒤 직접 구매 후 발송해주시면 됩니다. </div>
             <div class="registry">
                 <a href="https://registry.theknot.com/ryan-jeon-hyewon-kim-december-2023-il/56941937" target="blank">
-                    <el-button :icon="Promotion" type="danger" autofocus>Click here for registry</el-button>
+                    <el-button :icon="Promotion" type="danger">Click here for registry</el-button>
                 </a>
             </div>
         </div>

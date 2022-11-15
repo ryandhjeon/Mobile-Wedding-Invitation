@@ -26,9 +26,9 @@
     
         <div class="transportation__container">
             <div class="transportation__list">
-                <el-button @click="count = 1" autofocus style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">지하철</el-button>
-                <el-button @click="count = 2" autofocus style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">버스</el-button>
-                <el-button @click="count = 3" autofocus style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">주차</el-button>
+                <el-button @click="count = 1" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">지하철</el-button>
+                <el-button @click="count = 2" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">버스</el-button>
+                <el-button @click="count = 3" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">주차</el-button>
             </div>
             <el-card class="transportation__card">
                 <div v-if="count === 1" class="subway">   
