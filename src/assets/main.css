@@ -1,0 +1,55 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+h1 {
+  font-family: "Tangerine", serif;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  color: #3C3C3C;
+  text-shadow: 2px 4px 4px #FFF1E9;
+}
+
+.divider {
+  margin-top: 14rem;
+}
+
+.container {
+  /* min-height: 50vh; */
+  /* width: 90%; */
+  /* margin-bottom: 8em; */
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  main {
+    width: 480px;
+    /* margin: 0 auto; */
+  }
+}
