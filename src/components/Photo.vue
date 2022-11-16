@@ -91,6 +91,6 @@
 .sub {
     text-align: center;
     font-size: .8em;
-    color: grey;
+    color: darkgreen;
 }
 </style>

@@ -5,7 +5,6 @@ import App from "./App.vue";
 import router from "./router";
 import "./assets/main.css";
 
-
 const app = createApp(App);
 app.use(router);
 app.use(ElementPlus)
@@ -17,7 +16,7 @@ const faders = document.querySelectorAll
 
 const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -300px 0px"
+    rootMargin: "0px 0px -250px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver

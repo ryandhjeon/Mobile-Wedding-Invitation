@@ -177,7 +177,7 @@
     }
     
     .registry_button {
-        padding: 1.2em;
-        font-size: 0.9em;
+        padding: 1.3em;
+        /* font-size: 0.9em; */
     }
 </style>
