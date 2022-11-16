@@ -83,7 +83,7 @@
 
 .rsvp__contact {
     text-align: center;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 .rsvp__button {
