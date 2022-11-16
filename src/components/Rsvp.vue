@@ -72,7 +72,7 @@
 .rsvp__info {
     text-align: center;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .rsvp__address{
     text-align: center;
