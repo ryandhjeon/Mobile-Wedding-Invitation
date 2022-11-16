@@ -16,12 +16,18 @@ import { Calendar, ChatRound, Link } from '@element-plus/icons-vue'
 import { ref } from 'vue';
 import divider from "../assets/img/divider.png"
 
+const url = 'https://www.ryanhyewon.com'
+
+
+
 const copyUrl = () => {
   ElMessage({
     message: '링크가 복사되었습니다',
-    type: 'info',
-    // offset: '77'
+    type: 'info'
   })
+
+  navigator.clipboard.writeText(url);    
+  console.log(url)    
 }
 </script>
 

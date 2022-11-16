@@ -5,7 +5,7 @@
         <div class="title">두 사람에게 축하의 마음을 전하는 방법</div>
         <div>미국에서 신혼을 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 다른 형태의 마음을 받으면 더 의미 있을거라는 생각에 준비해 봤어요.</div>
         <div class="one">
-            <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요</div>
+            <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요.</div>
             <div class="love_button_list">
                 <el-button @click="count = 1, copy(groom)" type="danger" >신랑</el-button>
                 <el-button @click="count = 2, copy(bride)" type="danger" >신부</el-button>
@@ -23,8 +23,8 @@
                             <Stamp />
                         </el-icon>
                     </div>
-                    <div>신한은행 1111-1111-111111 전동헌</div>
-                    <div>Click the link for the <a href="https://account.venmo.com/u/ryandhjeon">Venmo</a></div>
+                    <div>신한은행 110-367-792110 전동헌</div>
+                    <div>Click the link for the <a href="https://account.venmo.com/u/ryandhjeon" target="blank">Venmo</a></div>
                 </div>
                 <div v-else-if="count === 2">                
                     <div class="one__card-title">
@@ -37,7 +37,7 @@
                         </el-icon>
                     </div>
                     <div>하나은행 288-910382-83407 김혜원</div>
-                    <div>Click the link for the <a href="https://account.venmo.com/u/wony9182">Venmo</a></div>
+                    <div>Click the link for the <a href="https://account.venmo.com/u/hyewony" target="blank">Venmo</a></div>
                 </div>
                 <div v-else-if="count === 3">
                     <div class="one__card-title">
@@ -49,7 +49,7 @@
                             <Stamp />
                         </el-icon>
                     </div>
-                    <div>신한은행 1111-1111-111111 전인영</div>
+                    <div>우리은행 0871-141-3802001 전인영</div>
                 </div>
                 <div v-else-if="count === 4">
                     <div class="one__card-title">
@@ -91,15 +91,16 @@
     import divider from "../assets/img/divider.png"
     // import venmo from "../assets/img/venmo.jpeg"
     import { Promotion, Goblet, Stamp } from '@element-plus/icons-vue'
-    const groom = '1234-1234-1234'
+    const groom = '110-367-792110'
     const bride = '288-910382-83407'
-    const groom_parent = '3333333333'
+    const groom_parent = '0871-141-3802001'
     const bride_parent = '1002-948-726774'
 
     const count = ref<number>(0)
 
     async function copy(s) {
         await navigator.clipboard.writeText(s);
+        console.log(s)
     }
 </script>
 
