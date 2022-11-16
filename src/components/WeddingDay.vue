@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-    import main from "../assets/img/main.jpeg"
+    import main from "../assets/img/main_L.jpeg"
 </script>
 
 <style scoped>

@@ -18,8 +18,6 @@ import divider from "../assets/img/divider.png"
 
 const url = 'https://www.ryanhyewon.com'
 
-
-
 const copyUrl = () => {
   ElMessage({
     message: '링크가 복사되었습니다',
