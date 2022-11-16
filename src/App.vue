@@ -8,7 +8,6 @@ import Rsvp from './components/Rsvp.vue'
 import Photo from './components/Photo.vue'
 import Location from './components/Location.vue'
 import Love from './components/Love.vue'
-import WeddingRegistry from './components/WeddingRegistry.vue'
 import Share from './components/Share.vue'
 </script>
 

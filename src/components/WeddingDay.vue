@@ -1,7 +1,4 @@
 <template>
-    <!-- <div id="main_header">
-        <div class="main__head">결<br />혼<br />합<br />니<br />다</div>
-    </div> -->
     <div class="main__container">
         <el-image class="main_image" :src="main" fit="cover" loading="lazy"/>
         <div class="main__description">
@@ -11,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-    import main from "../assets/img/15.jpg"
+    import main from "../assets/img/main.jpeg"
 </script>
 
 <style scoped>
@@ -38,8 +35,9 @@
         width: 100%;
         margin: 0 auto; 
         color: white;
-        text-shadow: 4px 4px 4px #c3c3c3;
+        text-shadow: 4px 4px 4px #5e5e5e;
         text-transform: uppercase;
         letter-spacing: 0.5em;
+        font-weight: bold;
     }
 </style>

@@ -2,58 +2,8 @@
     <el-image class="divider" :src="divider" loading="lazy"/>
     <h1>Love</h1>
     <div class="container">
-        <div class="title">두 사람에게 축하의 마음 전하는 방법</div>
-        <div>미국에서 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 다른 형태의 마음을 받으면 더 의미 있을거라는 생각에 준비해 봤어요.</div>
-        <!-- <div class="one">
-            <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요</div>
-            <div class="love_button_list">
-                <el-popover
-                    placement="bottom"
-                    title="신랑측의 계좌번호가 복사되었습니다"
-                    :width="300"
-                    trigger="click"
-                    content="신한은행 1111-1111-111111 Venmo: ryandhjeon"
-                >
-                    <template #reference>
-                    <el-button type="danger" @click="copy(groom)">신랑</el-button>
-                    </template>
-                </el-popover>
-                <el-popover
-                    placement="bottom"
-                    title="신부측의 계좌번호가 복사되었습니다"
-                    :width="300"
-                    trigger="click"
-                    content="신한은행 1111-1111-111111"
-                >
-                    <template #reference>
-                    <el-button type="danger" @click="copy(bride)">신부</el-button>
-                    </template>
-                </el-popover>
-                <el-popover
-                    placement="bottom"
-                    title="신랑혼주님의 계좌번호가 복사되었습니다"
-                    :width="300"
-                    trigger="click"
-                    content="신한은행 1111-1111-111111"
-                >
-                    <template #reference>
-                    <el-button type="danger" @click="copy(groom_parent)">신랑혼주</el-button>
-                    </template>
-                </el-popover>
-                <el-popover
-                    placement="bottom"
-                    title="신부혼주님의 계좌번호가 복사되었습니다"
-                    :width="300"
-                    trigger="click"
-                    content="성함: ㅇㅇㅇ, 계좌: 신한은행 1111-1111-111111"
-                >
-                    <template #reference>
-                    <el-button type="danger" @click="copy(bride_parent)">신부혼주</el-button>
-                    </template>
-                </el-popover>
-            </div>
-        </div> -->
-
+        <div class="title">두 사람에게 축하의 마음을 전하는 방법</div>
+        <div>미국에서 신혼을 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 다른 형태의 마음을 받으면 더 의미 있을거라는 생각에 준비해 봤어요.</div>
         <div class="one">
             <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요</div>
             <div class="love_button_list">
@@ -68,7 +18,7 @@
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
-                        신랑님의 계좌번호가 복사되었습니다
+                        <span class="bold">신랑</span>님의 계좌번호가 복사되었습니다
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
@@ -81,40 +31,41 @@
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
-                        신부님의 계좌번호가 복사되었습니다
+                        <span class="bold">신부</span>님의 계좌번호가 복사되었습니다
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
                     </div>
                     <div>하나은행 288-910382-83407 김혜원</div>
+                    <div>Click the link for the <a href="https://account.venmo.com/u/wony9182">Venmo</a></div>
                 </div>
                 <div v-else-if="count === 3">
                     <div class="one__card-title">
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
-                        신랑혼주님의 계좌번호가 복사되었습니다
+                        <span class="bold">신랑혼주</span>님의 계좌번호가 복사되었습니다
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
-                    </div>           
-                    <div>신한은행 1111-1111-111111</div>
+                    </div>
+                    <div>신한은행 1111-1111-111111 전인영</div>
                 </div>
                 <div v-else-if="count === 4">
                     <div class="one__card-title">
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
-                        신부혼주님의 계좌번호가 복사되었습니다
+                        <span class="bold">신부혼주</span>님의 계좌번호가 복사되었습니다
                         <el-icon :size="10" color="#FC9483">
                             <Stamp />
                         </el-icon>
-                    </div>           
+                    </div>
                     <div>우리은행 1002-948-726774 김인진</div>
                 </div>
                 <div v-else>
                     <span class="one__guide">
-                        <Guide style="width: 1.1em; height: 1.1em; margin-right: 8px" /> 
+                        <!-- <Guide style="width: 1.1em; height: 1.1em; margin-right: 8px" />  -->
                         <el-icon :size="15" color="#FC9483">
                             <Goblet />
                         </el-icon>
@@ -135,23 +86,21 @@
     </div>
 </template>
 
-
 <script lang="ts" setup>
-import { ref } from 'vue'
-import divider from "../assets/img/divider.png"
-import venmo from "../assets/img/venmo.jpeg"
-import { Promotion, Goblet, Stamp } from '@element-plus/icons-vue'
-const groom = '1234-1234-1234'
-const bride = '288-910382-83407'
-const groom_parent = '1002-948-726774'
-const bride_parent = '4444-1234-1234'
+    import { ref } from 'vue'
+    import divider from "../assets/img/divider.png"
+    // import venmo from "../assets/img/venmo.jpeg"
+    import { Promotion, Goblet, Stamp } from '@element-plus/icons-vue'
+    const groom = '1234-1234-1234'
+    const bride = '288-910382-83407'
+    const groom_parent = '3333333333'
+    const bride_parent = '1002-948-726774'
 
-const count = ref<number>(0)
+    const count = ref<number>(0)
 
-async function copy(s) {
-    await navigator.clipboard.writeText(s);
-    console.log(s)
-}
+    async function copy(s) {
+        await navigator.clipboard.writeText(s);
+    }
 </script>
 
 <style scope>
@@ -168,7 +117,6 @@ async function copy(s) {
     }
 
     .el-button {
-        /* font-size: 0.8em; */
         padding: 1em;
     }
 
@@ -186,7 +134,8 @@ async function copy(s) {
     }
 
     .one__card-title {
-        /* font-size: 0.7em; */
+        font-size: 0.8em;
+        margin-bottom: 1em;
     }
 
     .two {
@@ -211,9 +160,4 @@ async function copy(s) {
     .registry_button {
         padding: 1.5em;
     }
-
-    
-
 </style>
-
-

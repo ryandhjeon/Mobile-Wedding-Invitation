@@ -10,7 +10,7 @@
                 </template>
             </el-calendar>
         </div>
-        <div class="rsvp__form">
+        <!-- <div class="rsvp__form">
             <el-form :inline="true" :model="formInline" >
                 
                 <div class="rsvp__form-title">참석해주시는 모든 분들에게 최선을 다하기 위해 <br />아래 참석여부를 작성해 주시면 감사하겠습니다!</div>
@@ -28,35 +28,32 @@
                 </el-form-item>
                 <el-form-item>
                     <el-button type="danger" @click="onSubmit" class="rsvp__form-submit">참석하겠습니다!</el-button>
+                    <el-button type="danger" @click="onSubmit" class="rsvp__form-submit">참석이 힘들것 같아요 ㅠㅠ</el-button>
                 </el-form-item>
             </el-form>
-        </div>
+        </div> -->
         <div class="rsvp__contact">
-            궁금하신 사항이 있으시다면 연락주세요 
+            궁금하신 사항이 있으시다면 연락주세요.
             <div class="rsvp__button">
                 <a href="https://open.kakao.com/o/sq8e99Ke" target="blank">
                     <el-button :icon="UserFilled" :plain="true">카카오톡으로 연락하기</el-button>
                 </a>
             </div>
         </div>
-        
-        
     </div>
 </template>
 
 <script lang="ts" setup>
-    import { UserFilled } from '@element-plus/icons-vue';
+    import { UserFilled } from '@element-plus/icons-vue'
     import { ref, reactive } from 'vue'
-    import divider from "../assets/img/divider.png"
-    
+    import divider from "../assets/img/divider.png"    
+            
     const form = reactive({
+        newTodo: '',
         name: '',
         number: '',
         side: '',
     })
-    const onSubmit = () => {
-         console.log('submit!')
-    }
 
     const Value = ref(new Date(2022, 11, 17))
     const Range = [new Date(2022, 11, 4), new Date(2022, 11, 24)]
@@ -73,7 +70,8 @@
 }
 .rsvp__info {
     text-align: center;
-    font-size: 1.2em;
+    font-weight: bold;
+    /* font-size: 1.2em; */
 }
 
 .rsvp__calendar {
@@ -82,7 +80,7 @@
 
 .rsvp__contact {
     text-align: center;
-    padding: 2em;
+    /* padding: 1em; */
 }
 
 .rsvp__button {

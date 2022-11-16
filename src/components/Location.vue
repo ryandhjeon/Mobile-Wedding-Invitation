@@ -34,7 +34,7 @@
                 <div v-if="count === 1" class="subway">   
                     <el-image class="subway_shin" :src="subwayShin"/>             
                     <div class="transportation__card-subtitle">신도림역 1호선 , 2호선</div>
-                    <div>신도림역 3번출구 테크노마트 판매동 지하1층과 직접 연결되어 있습니다.</div>
+                    <div>신도림역 3번출구 테크노마트 판매동 지하 1층과 직접 연결되어 있습니다.</div>
                 </div>
                 <div v-else-if="count === 2">                
                     <div class="transportation__card-subtitle">신도림역 1번출구(17-001) 정류장 하차</div>

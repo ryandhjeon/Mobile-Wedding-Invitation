@@ -1,16 +1,7 @@
 <template>
     <div class="main__title">
-
         <span class="main__name"><el-image :src="leaf_left" class="leaf_l" loading="lazy"/>전동헌 & 김혜원<el-image class="leaf_r" :src="leaf_right" loading="lazy"/></span>
-        <!-- <span class="main__and">and</span>
-        <span class="main__name">김혜원</span> -->
-        <!-- <div class="main__info">
-        <div>12.17 4:50PM</div>
-        <div>신도림 웨딩시티 아모르홀</div>
-        </div> -->
-    </div>
-    <!-- <el-divider /> -->
-    
+    </div>    
 </template>
 
 <script setup lang="ts">
