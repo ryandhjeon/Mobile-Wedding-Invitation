@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
@@ -9,57 +12,57 @@
             <div class="love_button_list">
                 <el-button @click="count = 1, copy(groom)" type="danger" >신랑</el-button>
                 <el-button @click="count = 2, copy(bride)" type="danger" >신부</el-button>
-                <el-button @click="count = 3, copy(groom_parent)" type="danger" >신랑혼주</el-button>
-                <el-button @click="count = 4, copy(bride_parent)" type="danger" >신부혼주</el-button>
+                <el-button @click="count = 3, copy(groom_parent)" type="danger" >신랑 혼주</el-button>
+                <el-button @click="count = 4, copy(bride_parent)" type="danger" >신부 혼주</el-button>
             </div>
             <el-card class="one__card">
                 <div v-if="count === 1">     
                     <div class="one__card-title">
-                        <el-icon :size="10" color="#FC9483">
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
-                        <span class="bold">신랑</span>님의 계좌번호가 복사되었습니다
-                        <el-icon :size="10" color="#FC9483">
+                        </el-icon> -->
+                        <span class="bold">신랑</span>님의 계좌번호입니다
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
+                        </el-icon> -->
                     </div>
                     <div>신한은행 110-367-792110 전동헌</div>
                     <div>Click the link for the <a href="https://account.venmo.com/u/ryandhjeon" target="blank">Venmo</a></div>
                 </div>
                 <div v-else-if="count === 2">                
                     <div class="one__card-title">
-                        <el-icon :size="10" color="#FC9483">
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
-                        <span class="bold">신부</span>님의 계좌번호가 복사되었습니다
-                        <el-icon :size="10" color="#FC9483">
+                        </el-icon> -->
+                        <span class="bold">신부</span>님의 계좌번호입니다
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
+                        </el-icon> -->
                     </div>
                     <div>하나은행 288-910382-83407 김혜원</div>
                     <div>Click the link for the <a href="https://account.venmo.com/u/hyewony" target="blank">Venmo</a></div>
                 </div>
                 <div v-else-if="count === 3">
                     <div class="one__card-title">
-                        <el-icon :size="10" color="#FC9483">
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
-                        <span class="bold">신랑혼주</span>님의 계좌번호가 복사되었습니다
-                        <el-icon :size="10" color="#FC9483">
+                        </el-icon> -->
+                        <span class="bold">신랑 혼주</span>님의 계좌번호입니다
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
+                        </el-icon> -->
                     </div>
                     <div>우리은행 0871-141-3802001 전인영</div>
                 </div>
                 <div v-else-if="count === 4">
                     <div class="one__card-title">
-                        <el-icon :size="10" color="#FC9483">
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
-                        <span class="bold">신부혼주</span>님의 계좌번호가 복사되었습니다
-                        <el-icon :size="10" color="#FC9483">
+                        </el-icon> -->
+                        <span class="bold">신부 혼주</span>님의 계좌번호입니다
+                        <!-- <el-icon :size="10" color="#FC9483">
                             <Stamp />
-                        </el-icon>
+                        </el-icon> -->
                     </div>
                     <div>우리은행 1002-948-726774 김인진</div>
                 </div>
@@ -79,7 +82,7 @@
             <div>사용할 때마다 선물한 분들을 떠올리며 감사하는 마음을 오래도록 간직하고자 합니다. 아래 링크에 들어가셔서 Our Wish List 안에 선물하고 싶은 물건을 선택하신 뒤 직접 구매 후 발송해주시면 됩니다. </div>
             <div class="registry">
                 <a href="https://registry.theknot.com/ryan-jeon-hyewon-kim-december-2023-il/56941937" target="blank">
-                    <el-button class="registry_button" :icon="Promotion" type="danger">Click here for the registry</el-button>
+                    <el-button class="registry_button" :icon="Promotion" type="danger">레지스트리 구경하기 (English)</el-button>
                 </a>
             </div>
         </div>
@@ -98,10 +101,22 @@
 
     const count = ref<number>(0)
 
-    async function copy(s) {
-        await navigator.clipboard.writeText(s);
-        console.log(s)
+    const copy = (s) => {
+        ElMessage({
+            message: '계좌번호가 복사되었습니다',
+            type: 'info'
+        })
+
+        navigator.clipboard.writeText(s);    
     }
+
+    // async function copy(s) {
+    
+    //     await navigator.clipboard.writeText(s);
+    //     console.log(s)
+    // }
+
+    
 </script>
 
 <style scope>

@@ -4,6 +4,7 @@ import 'element-plus/dist/index.css'
 import App from "./App.vue";
 import router from "./router";
 import "./assets/main.css";
+// import "./assets/snow"
 
 const app = createApp(App);
 app.use(router);
