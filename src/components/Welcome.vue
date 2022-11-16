@@ -29,9 +29,9 @@ import leaf_right from "../assets/img/leaf_right.png"
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .main__name {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 }
 
