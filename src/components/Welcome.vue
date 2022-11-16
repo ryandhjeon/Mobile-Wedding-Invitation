@@ -17,7 +17,6 @@ import leaf_right from "../assets/img/leaf_right.png"
 .main__title span{
     display: block;
     text-align: center;
-    /* font-size: 3em; */
 }
 
 .main__name {

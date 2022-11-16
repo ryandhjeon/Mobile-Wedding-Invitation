@@ -8,22 +8,16 @@
 </template>
 
 <script lang="ts" setup>
-    import main from "../assets/img/main_L.jpeg"
+    import main from "../assets/img/main_Large.png"
 </script>
 
 <style scoped>
     .main__container {
         position: relative;
         text-align: center;
-        /* margin: 5em 1em; */
     }
     .main_image {
-        /* border: 0.5em solid #FFF; */
         border-bottom-width: 5em;
-        /* padding-bottom: 4em; */
-        /* border-radius: 70% 50% 60% 90%; */
-        /* margin-bottom: 3em; */
-        border-color: #fdf8f1;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
     }
