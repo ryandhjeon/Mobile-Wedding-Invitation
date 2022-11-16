@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-    import main from "../assets/img/main_Large.png"
+    import main from "../assets/img/main_32.jpeg"
 </script>
 
 <style scoped>
@@ -29,7 +29,7 @@
         width: 100%;
         margin: 0 auto; 
         color: white;
-        text-shadow: 4px 4px 4px #5e5e5e;
+        text-shadow: 4px 4px 4px #8c8c8c;
         text-transform: uppercase;
         letter-spacing: 0.5em;
         font-weight: bold;

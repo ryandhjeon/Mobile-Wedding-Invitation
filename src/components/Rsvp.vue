@@ -70,7 +70,7 @@
 }
 .rsvp__info {
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* font-size: 1.2em; */
 }
 
