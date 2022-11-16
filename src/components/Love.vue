@@ -10,10 +10,10 @@
         <div class="one">
             <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요.</div>
             <div class="love_button_list">
-                <el-button @click="count = 1, copy(groom)" type="danger" >신랑</el-button>
-                <el-button @click="count = 2, copy(bride)" type="danger" >신부</el-button>
-                <el-button @click="count = 3, copy(groom_parent)" type="danger" >신랑 혼주</el-button>
-                <el-button @click="count = 4, copy(bride_parent)" type="danger" >신부 혼주</el-button>
+                <el-button class="registry_button" @click="count = 1, copy(groom)" type="danger" >신랑</el-button>
+                <el-button class="registry_button" @click="count = 2, copy(bride)" type="danger" >신부</el-button>
+                <el-button class="registry_button" @click="count = 3, copy(groom_parent)" type="danger" >신랑 혼주</el-button>
+                <el-button class="registry_button" @click="count = 4, copy(bride_parent)" type="danger" >신부 혼주</el-button>
             </div>
             <el-card class="one__card">
                 <div v-if="count === 1">     
@@ -124,6 +124,7 @@
         text-align: center;   
         color: darkgreen;
         margin-bottom: 1em;
+        font-weight: bold;
     }
 
     .love_button_list {
@@ -143,6 +144,7 @@
     .one__title {
         text-align: center;   
         color: darkgreen;
+        font-weight: bold;
     }
 
     .one__card {
@@ -162,6 +164,7 @@
         text-align: center;   
         color: darkgreen;
         margin-bottom: 1em;
+        font-weight: bold;
     }
 
     .venmo {
@@ -174,6 +177,7 @@
     }
     
     .registry_button {
-        padding: 1.5em;
+        padding: 1.2em;
+        font-size: 0.9em;
     }
 </style>
