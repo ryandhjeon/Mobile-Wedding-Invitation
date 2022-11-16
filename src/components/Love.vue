@@ -27,7 +27,7 @@
                         </el-icon> -->
                     </div>
                     <div>신한은행 110-367-792110 전동헌</div>
-                    <div>Click the link for the <a href="https://account.venmo.com/u/ryandhjeon" target="blank">Venmo</a></div>
+                    <!-- <div>Click the link for the <a href="https://account.venmo.com/u/ryandhjeon" target="blank">Venmo</a></div> -->
                 </div>
                 <div v-else-if="count === 2">                
                     <div class="one__card-title">
@@ -40,7 +40,7 @@
                         </el-icon> -->
                     </div>
                     <div>하나은행 288-910382-83407 김혜원</div>
-                    <div>Click the link for the <a href="https://account.venmo.com/u/hyewony" target="blank">Venmo</a></div>
+                    <!-- <div>Click the link for the <a href="https://account.venmo.com/u/hyewony" target="blank">Venmo</a></div> -->
                 </div>
                 <div v-else-if="count === 3">
                     <div class="one__card-title">
