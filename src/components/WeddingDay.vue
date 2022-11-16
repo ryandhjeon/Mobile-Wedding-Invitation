@@ -1,5 +1,5 @@
 <template>
-    <div class="main__container">
+    <div id="snow" class="main__container fade-in">
         <el-image class="main_image" :src="main" fit="cover" loading="lazy"/>
         <div class="main__description">
             The marriage of
@@ -35,3 +35,4 @@
         font-weight: bold;
     }
 </style>
+

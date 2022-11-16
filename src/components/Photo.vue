@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Photo album</h1>
         <div class="demo-image__preview">

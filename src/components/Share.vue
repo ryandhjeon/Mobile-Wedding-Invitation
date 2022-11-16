@@ -2,6 +2,7 @@
 </script>
 
 <template>
+  <div class="fade-in">
     <el-image class="divider" :src="divider" loading="lazy"/>
     <h1>Share</h1>
     <div class="share">
@@ -9,6 +10,7 @@
       <el-button :icon="Link" :plain="true" @click="copyUrl()">청첩장 링크 복사하기</el-button>
     </div>
     <h3>Wishing you all of the love and happiness! <br />동헌 & 혜원</h3>
+  </div>
 </template>
 
 <script setup lang="ts">

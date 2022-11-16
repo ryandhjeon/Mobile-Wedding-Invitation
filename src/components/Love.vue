@@ -1,7 +1,7 @@
 <template>
-    <el-image class="divider" :src="divider" loading="lazy"/>
-    <h1>Love</h1>
-    <div class="container">
+    <div class="container fade-in">
+        <el-image class="divider" :src="divider" loading="lazy"/>
+        <h1>Love</h1>
         <div class="title">두 사람에게 축하의 마음을 전하는 방법</div>
         <div>미국에서 신혼을 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 다른 형태의 마음을 받으면 더 의미 있을거라는 생각에 준비해 봤어요.</div>
         <div class="one">

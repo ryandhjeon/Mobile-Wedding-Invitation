@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Event Location</h1>
         <div class="map__grid">
@@ -51,9 +51,9 @@
                     테크노마트 지하주차장 이용(B3~B7)
                     주차요원의 안내를 받으세요.
                 </div>
-                <div v-else>
-                    <span class="transportation__guide">
-                        <Guide style="width: 1.1em; height: 1.1em; margin-right: 8px" />사용하실 교통수단을 눌러주세요
+                <div v-else class="transportation__guide">
+                    <span>
+                        사용하실 교통수단을 눌러주세요
                     </span>
                 </div>
             </el-card>
@@ -111,19 +111,22 @@
     margin: 1em 0;
 }
 .transportation__card {
-    /* font-size: 0.8em; */
+    font-size: 0.8em;
     color: #3c3c3c;
 }
 .transportation__card-subtitle {
     font-weight: bold;
 }
+.transportation__guide {
+    text-align: center;
+}
+
 .subway {
     text-align: center;
 }
 .subway_shin {
     width: 30%;
-    border-radius: 30%;
-    
+    border-radius: 30%;   
 }
 
 

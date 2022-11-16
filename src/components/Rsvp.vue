@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Mark your calendar</h1>
         <div class="rsvp__info">2022년 12월 17일 토요일 <br /> 오후 4시 50분 <br /> 신도림 웨딩시티 아모르홀</div>

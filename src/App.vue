@@ -7,6 +7,8 @@ import Photo from './components/Photo.vue'
 import Location from './components/Location.vue'
 import Love from './components/Love.vue'
 import Share from './components/Share.vue'
+import Snow from './components/Snow.vue'
+
 </script>
 
 <template>
