@@ -180,4 +180,10 @@
         padding: 1.3em;
         /* font-size: 0.9em; */
     }
+
+    @media (max-width: 360px) {
+    .registry_button {
+        padding: 1em;
+    }
+}
 </style>
