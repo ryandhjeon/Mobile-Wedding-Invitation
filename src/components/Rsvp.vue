@@ -71,7 +71,7 @@
 .rsvp__info {
     text-align: center;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .rsvp__calendar {
