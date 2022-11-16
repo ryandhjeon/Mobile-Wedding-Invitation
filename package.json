@@ -11,6 +11,8 @@
     "element-plus": "^2.2.19",
     "particles.vue3": "^2.5.3",
     "vue": "^3.2.41",
+    "vue-head": "^2.2.0",
+    "vue-meta": "^2.4.0",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {

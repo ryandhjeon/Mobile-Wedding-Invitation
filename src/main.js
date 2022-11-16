@@ -1,14 +1,15 @@
-import { createApp } from "vue";
+import { createApp, onMounted } from "vue";
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import App from "./App.vue";
 import router from "./router";
 import "./assets/main.css";
-// import "./assets/snow"
+
 
 const app = createApp(App);
 app.use(router);
 app.use(ElementPlus)
+
 app.mount('#app')
 
 const faders = document.querySelectorAll
@@ -38,3 +39,4 @@ appearOptions);
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 })
+

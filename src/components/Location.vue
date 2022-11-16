@@ -8,8 +8,8 @@
         <div class="map__description">
             <span>서울시 구로구 새말로97 신도림 테크노마트 8층</span>
             <span class="map__description-button"> 
-                <a href="https://naver.me/5pNERn5Z" target="blank"><el-button type="success" plain>네이버 맵</el-button></a>
-                <a href="http://kko.to/4Jfa8MDW_C" target="blank"><el-button type="warning" plain>카카오 맵</el-button></a>
+                <a href="https://naver.me/5pNERn5Z" target="blank"><el-button class="location_button" type="success" plain>네이버 맵</el-button></a>
+                <a href="http://kko.to/4Jfa8MDW_C" target="blank"><el-button class="location_button" type="warning" plain>카카오 맵</el-button></a>
                 <el-popover
                     placement="top-start"
                     title="웨딩시티"
@@ -17,18 +17,18 @@
                     trigger="click"
                     content="02 . 2111 . 8888"
                 >
-                    <template #reference>
-                        <el-button :icon="PhoneFilled" type="info" plain>웨딩시티</el-button>        
-                    </template>
+                    <!-- <template #reference>
+                        <el-button  class="location_button" :icon="PhoneFilled" type="info" plain>웨딩시티</el-button>        
+                    </template> -->
                 </el-popover>
             </span>
         </div>
     
         <div class="transportation__container">
             <div class="transportation__list">
-                <el-button @click="count = 1" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">지하철</el-button>
-                <el-button @click="count = 2" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">버스</el-button>
-                <el-button @click="count = 3" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)">주차</el-button>
+                <el-button @click="count = 1" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">지하철</el-button>
+                <el-button @click="count = 2" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">버스</el-button>
+                <el-button @click="count = 3" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">주차</el-button>
             </div>
             <el-card class="transportation__card">
                 <div v-if="count === 1" class="subway">   
@@ -127,6 +127,11 @@
 .subway_shin {
     width: 30%;
     border-radius: 30%;   
+}
+
+.location_button {
+    padding: 1.5em;
+    color: darkslategray;
 }
 
 

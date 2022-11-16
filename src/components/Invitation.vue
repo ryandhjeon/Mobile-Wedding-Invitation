@@ -1,15 +1,9 @@
 <template>
     <div class="container fade-in">
         <div class="story1">
-            Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres.
-            Love never fails.
-            <div>1 Corinthians 13:4-8</div>
+            사람이 마음으로 자기의 길을 계획할지라도 <br /> 그 걸음을 인도하는 자는 여호와시니라
+            <div>잠언 16:9</div>
         </div>
-
-        <!-- <div class="story1">
-            In their hearts humans plan their course, <br /> but the Lord establishes their steps.
-            <div>Proverbs 16:9</div>
-        </div> -->
         
         
         <div class="story2">

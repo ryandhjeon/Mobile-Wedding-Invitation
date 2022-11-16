@@ -21,13 +21,13 @@ h1 {
   font-family: "Tangerine", serif;
   text-align: center;
   margin-bottom: 0.5em;
-  font-size: 3em;
-  color: #3C3C3C;
+  font-size: 2.5em;
+  color: #575757;
   text-shadow: 2px 4px 4px #FFF1E9;
 }
 
 .divider {
-  margin-top: 14rem;
+  margin-top: 7rem;
 }
 
 .container {

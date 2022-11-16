@@ -2,14 +2,14 @@
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Mark your calendar</h1>
-        <div class="rsvp__info">2022년 12월 17일 토요일 <br /> 오후 4시 50분 <br /> 신도림 웨딩시티 아모르홀</div>
-        <div class="rsvp__calendar">
+        <div class="rsvp__info">2022년 12월 17일 토요일 <br /> 오후 4시 50분 <br /> 신도림 웨딩시티 8층 아모르홀</div>
+        <!-- <div class="rsvp__calendar">
             <el-calendar v-model=Value :range=Range ref="calendar" style="--el-calendar-selected-bg-color: #FC9483">
                 <template #header="{ date }">
                     <span>2022 . 12월</span>
                 </template>
             </el-calendar>
-        </div>
+        </div> -->
         <!-- <div class="rsvp__form">
             <el-form :inline="true" :model="formInline" >
                 
@@ -33,7 +33,7 @@
             </el-form>
         </div> -->
         <div class="rsvp__contact">
-            궁금하신 사항이 있으시다면 연락주세요.
+            <!-- 궁금하신 사항이 있으시다면 연락주세요. -->
             <div class="rsvp__button">
                 <a href="https://open.kakao.com/o/sq8e99Ke" target="blank">
                     <el-button :icon="UserFilled" :plain="true">카카오톡으로 연락하기</el-button>
@@ -56,7 +56,7 @@
     })
 
     const Value = ref(new Date(2022, 11, 17))
-    const Range = [new Date(2022, 11, 4), new Date(2022, 11, 24)]
+    const Range = [new Date(2022, 11, 11), new Date(2022, 11, 17)]
 </script>
 
 <style scoped>    
@@ -70,8 +70,8 @@
 }
 .rsvp__info {
     text-align: center;
-    /* font-weight: bold; */
-    /* font-size: 1.2em; */
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .rsvp__calendar {
@@ -80,7 +80,7 @@
 
 .rsvp__contact {
     text-align: center;
-    /* padding: 1em; */
+    padding: 1em;
 }
 
 .rsvp__button {

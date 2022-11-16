@@ -20,8 +20,8 @@ import Share from './components/Share.vue'
     <Invitation />
     <Rsvp />
     <Photo />
-    <Location />
     <Love />
+    <Location />
     <Share />
   </main>
 </template>

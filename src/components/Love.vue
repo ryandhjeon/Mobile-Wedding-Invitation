@@ -52,7 +52,7 @@
                             <Stamp />
                         </el-icon> -->
                     </div>
-                    <div>우리은행 0871-141-3802001 전인영</div>
+                    <div>국민은행 451-24-0124-808 전인영</div>
                 </div>
                 <div v-else-if="count === 4">
                     <div class="one__card-title">
@@ -96,7 +96,7 @@
     import { Promotion, Goblet, Stamp } from '@element-plus/icons-vue'
     const groom = '110-367-792110'
     const bride = '288-910382-83407'
-    const groom_parent = '0871-141-3802001'
+    const groom_parent = '451-24-0124-808'
     const bride_parent = '1002-948-726774'
 
     const count = ref<number>(0)
