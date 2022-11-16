@@ -12,10 +12,10 @@
     <div class="ending">
         Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres.
         Love never fails.
-        <div>1 Corinthians 13:4-8</div>
+        <div class="verse">1 Corinthians 13:4-8</div>
     </div>
 
-    <h3>동헌 & 혜원</h3>
+    <h3 class="signature">동헌 & 혜원</h3>
   </div>
 </template>
 
@@ -54,11 +54,20 @@ const copyUrl = () => {
   .ending {
     text-align: center;
     margin: 5em auto;
+    
   }
 
   h3 {
     text-align: center;
     margin-top: 5em;
     margin-bottom: 1em;
+  }
+
+  .verse { 
+    margin-top: 1em;
+  }
+
+  .signature {
+    font-weight: bold;
   }
 </style>

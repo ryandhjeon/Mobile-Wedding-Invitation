@@ -1,7 +1,7 @@
 <template>
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
-        <h1>Mark your calendar</h1>
+        <h1>Welcome</h1>
         <div class="rsvp__info">2022년 12월 17일 토요일 <br /> 오후 4시 50분 <br /> 신도림 웨딩시티 8층 아모르홀</div>
         <div class="rsvp__address">(서울시 구로구 새말로97 신도림 테크노마트 8층)</div>
         <!-- <div class="rsvp__calendar">

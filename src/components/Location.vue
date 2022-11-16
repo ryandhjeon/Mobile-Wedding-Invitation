@@ -1,7 +1,7 @@
 <template>
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
-        <h1>Event Location</h1>
+        <h1>Location</h1>
         <div class="map__grid">
             <el-image class="map" :src="map"/>
         </div>
