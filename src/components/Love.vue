@@ -82,7 +82,7 @@
             <div>사용할 때마다 선물한 분들을 떠올리며 감사하는 마음을 오래도록 간직하고자 합니다. 아래 링크에 들어가셔서 Our Wish List 안에 선물하고 싶은 물건을 선택하신 뒤 직접 구매 후 발송해주시면 됩니다. </div>
             <div class="registry">
                 <a href="https://registry.theknot.com/ryan-jeon-hyewon-kim-december-2023-il/56941937" target="blank">
-                    <el-button class="registry_button" :icon="Promotion" type="danger">레지스트리 구경하기 (English)</el-button>
+                    <el-button class="registry_button" :icon="Promotion" type="danger">레지스트리 구경하기 (Registry)</el-button>
                 </a>
             </div>
         </div>
