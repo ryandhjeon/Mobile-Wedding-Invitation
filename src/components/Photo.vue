@@ -92,5 +92,6 @@
     text-align: center;
     font-size: .8em;
     color: darkgreen;
+    margin-bottom: 10px;
 }
 </style>
