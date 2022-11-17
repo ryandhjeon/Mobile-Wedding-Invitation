@@ -70,7 +70,7 @@
                     <span class="one__guide">
                         <!-- <Guide style="width: 1.1em; height: 1.1em; margin-right: 8px" />  -->
                         <el-icon :size="15" color="#FC9483">
-                            <Goblet />
+                            <ArrowUpBold />
                         </el-icon>
                     </span>
                 </div>
@@ -93,7 +93,7 @@
     import { ref } from 'vue'
     import divider from "../assets/img/divider.png"
     // import venmo from "../assets/img/venmo.jpeg"
-    import { Promotion, Goblet, Stamp } from '@element-plus/icons-vue'
+    import { Promotion, Goblet, Stamp, ArrowUpBold } from '@element-plus/icons-vue'
     const groom = '110-367-792110'
     const bride = '288-910382-83407'
     const groom_parent = '451-24-0124-808'
