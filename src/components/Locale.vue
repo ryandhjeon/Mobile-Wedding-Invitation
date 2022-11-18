@@ -1,5 +1,5 @@
 <template>
-    <el-select class="locale-changer" v-model="$i18n.locale" placeholder="Language">
+    <el-select class="locale-changer" v-model="$i18n.locale" placeholder="Language" size="small">
         <el-option 
             v-for="item in langs" 
             :key="item.value" 
@@ -35,8 +35,8 @@ export default {
     top: 5px;
     right: 5px;
     z-index: 999;
-    width: 5em;
+    width: 4em;
     box-shadow: 0;
-    
+
 }
 </style>
