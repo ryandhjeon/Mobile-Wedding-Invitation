@@ -47,7 +47,6 @@
     import image_14 from "../assets/img/14 Large.jpeg"
     import image_15 from "../assets/img/15 Large.jpeg"
     import image_16 from "../assets/img/16 Large.jpeg"
-    import image_17 from "../assets/img/17 Large.jpeg"
     import image_18 from "../assets/img/18 Large.jpeg"
     import image_19 from "../assets/img/19 Large.jpeg"
     import image_20 from "../assets/img/20 Large.jpeg"
@@ -55,7 +54,7 @@
 
     const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
     const url = image_1
-    const srcList = [image_1, image_2,image_3,image_4,image_5,image_6,image_7,image_8,image_9,image_10,image_11,image_12,image_13,image_14,image_15,image_16,image_17,image_18,image_19,image_20,image_21]
+    const srcList = [image_1, image_2,image_3,image_4,image_5,image_6,image_7,image_8,image_9,image_10,image_11,image_12,image_13,image_14,image_15,image_16,image_18,image_19,image_20,image_21]
   
 </script>
 
