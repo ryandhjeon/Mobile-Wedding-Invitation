@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@vueform/toggle": "^2.1.2",
     "element-plus": "^2.2.19",
     "particles.vue3": "^2.5.3",
     "vue": "^3.2.41",
