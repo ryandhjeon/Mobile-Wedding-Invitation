@@ -5,15 +5,15 @@
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Love</h1>
-        <div class="title">두 사람에게 축하의 마음을 전하는 방법</div>
-        <div>미국에서 신혼을 시작하는 저희에게 축하해주고 싶은 마음이 가득한 당신으로부터 두가지 다른 형태의 마음을 받으면 더 의미 있을거라는 생각에 준비해 봤어요.</div>
+        <div class="title">{{ $t("message.love1") }}</div>
+        <div>{{ $t("message.love2") }}</div>
         <div class="one">
-            <div class="one__title">첫째, 축의금 전달하실 분을 눌러주세요.</div>
+            <div class="one__title">{{ $t("message.love3") }}</div>
             <div class="love_button_list">
-                <el-button class="registry_button" @click="count = 1, copy(groom)" type="danger" >신랑</el-button>
-                <el-button class="registry_button" @click="count = 2, copy(bride)" type="danger" >신부</el-button>
-                <el-button class="registry_button" @click="count = 3, copy(groom_parent)" type="danger" >신랑 혼주</el-button>
-                <el-button class="registry_button" @click="count = 4, copy(bride_parent)" type="danger" >신부 혼주</el-button>
+                <el-button class="registry_button" @click="count = 1, copy(groom)" type="danger" >{{ $t("message.love4") }}</el-button>
+                <el-button class="registry_button" @click="count = 2, copy(bride)" type="danger" >{{ $t("message.love5") }}</el-button>
+                <el-button class="registry_button" @click="count = 3, copy(groom_parent)" type="danger" >{{ $t("message.love6") }}</el-button>
+                <el-button class="registry_button" @click="count = 4, copy(bride_parent)" type="danger" >{{ $t("message.love7") }}</el-button>
             </div>
             <el-card class="one__card">
                 <div v-if="count === 1">     
@@ -78,11 +78,11 @@
         </div>
 
         <div class="two">
-            <div class="two__title">둘째, 신혼집을 꾸리고 싶은것들을 적어보았어요. </div>
-            <div>사용할 때마다 선물한 분들을 떠올리며 감사하는 마음을 오래도록 간직하고자 합니다. 아래 링크에 들어가셔서 Our Wish List 안에 선물하고 싶은 물건을 선택하신 뒤 직접 구매 후 발송해주시면 됩니다. </div>
+            <div class="two__title">{{ $t("message.love8") }}</div>
+            <div>{{ $t("message.love9") }}</div>
             <div class="registry">
                 <a href="https://registry.theknot.com/ryan-jeon-hyewon-kim-december-2023-il/56941937" target="blank">
-                    <el-button class="registry_button" :icon="Promotion" type="danger">레지스트리 구경하기 (Registry)</el-button>
+                    <el-button class="registry_button" :icon="Promotion" type="danger">{{ $t("message.love10") }}</el-button>
                 </a>
             </div>
         </div>

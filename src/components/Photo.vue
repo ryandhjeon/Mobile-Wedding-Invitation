@@ -2,7 +2,7 @@
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Photo album</h1>
-        <div class="sub">사진을 눌러주세요^^</div>
+        <div class="sub">{{ $t("message.photo") }}</div>
         <div class="demo-image__preview">
             <el-image
             :src="url"

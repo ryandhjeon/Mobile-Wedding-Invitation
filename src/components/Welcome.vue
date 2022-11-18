@@ -1,6 +1,6 @@
 <template>
     <div class="main__title fade-in">
-        <span class="main__name"><el-image :src="leaf_left" class="leaf_l" loading="lazy"/>전동헌 & 김혜원<el-image class="leaf_r" :src="leaf_right" loading="lazy"/></span>
+        <span class="main__name"><el-image :src="leaf_left" class="leaf_l" loading="lazy"/>{{ $t("message.name") }}<el-image class="leaf_r" :src="leaf_right" loading="lazy"/></span>
     </div>    
 </template>
 

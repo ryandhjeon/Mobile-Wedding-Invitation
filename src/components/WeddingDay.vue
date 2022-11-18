@@ -7,8 +7,8 @@
     </div>
 </template>
 
-<script lang="ts" setup>
-    import main from "../assets/img/main_32.jpeg"
+<script setup>
+    import main from "/src/assets/img/main.jpeg"
 </script>
 
 <style scoped>
@@ -17,7 +17,6 @@
         text-align: center;
     }
     .main_image {
-        border-bottom-width: 5em;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
     }
@@ -29,7 +28,7 @@
         width: 100%;
         margin: 0 auto; 
         color: white;
-        text-shadow: 4px 4px 4px #8c8c8c;
+        text-shadow: 2px 2px 2px #8c8c8c;
         text-transform: uppercase;
         letter-spacing: 0.5em;
         font-weight: bold;

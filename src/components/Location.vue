@@ -8,27 +8,16 @@
         <div class="map__description">
             <span>서울시 구로구 새말로97 신도림 테크노마트 8층</span>
             <span class="map__description-button"> 
-                <a href="https://naver.me/5pNERn5Z" target="blank"><el-button class="location_button" type="success" plain>네이버 맵</el-button></a>
-                <a href="http://kko.to/4Jfa8MDW_C" target="blank"><el-button class="location_button" type="warning" plain>카카오 맵</el-button></a>
-                <el-popover
-                    placement="top-start"
-                    title="웨딩시티"
-                    :width="200"
-                    trigger="click"
-                    content="02 . 2111 . 8888"
-                >
-                    <!-- <template #reference>
-                        <el-button  class="location_button" :icon="PhoneFilled" type="info" plain>웨딩시티</el-button>        
-                    </template> -->
-                </el-popover>
+                <a href="https://naver.me/5pNERn5Z" target="blank"><el-button class="location_button" type="success" plain>{{ $t("message.Location1") }}</el-button></a>
+                <a href="http://kko.to/4Jfa8MDW_C" target="blank"><el-button class="location_button" type="warning" plain>{{ $t("message.Location2") }}</el-button></a>
             </span>
         </div>
     
         <div class="transportation__container">
             <div class="transportation__list">
-                <el-button @click="count = 1" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">지하철</el-button>
-                <el-button @click="count = 2" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">버스</el-button>
-                <el-button @click="count = 3" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">주차</el-button>
+                <el-button @click="count = 1" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">{{ $t("message.Location3") }}</el-button>
+                <el-button @click="count = 2" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">{{ $t("message.Location4") }}</el-button>
+                <el-button @click="count = 3" style="--el-button-hover-text-color: white; --el-button-hover-bg-color: var(--el-color-primary)" type="danger">{{ $t("message.Location5") }}</el-button>
             </div>
             <el-card class="transportation__card">
                 <div v-if="count === 1" class="subway">   
@@ -53,7 +42,7 @@
                 </div>
                 <div v-else class="transportation__guide">
                     <span>
-                        사용하실 교통수단을 눌러주세요
+                        {{ $t("message.Location6") }}
                     </span>
                 </div>
             </el-card>

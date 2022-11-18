@@ -6,19 +6,7 @@ import App from "./App.vue";
 import router from "./router";
 import VueGtag from "vue-gtag";
 import "./assets/main.css";
-
-const messages = {
-    en: {
-        message: {
-        hello: 'hello world'
-        }
-    },
-    ko: {
-        message: {
-        hello: '하이'
-        }
-    }
-} 
+import { messages } from "./util/messages";
 
 const i18n = createI18n({
     locale: 'ko', 
@@ -39,8 +27,6 @@ app.use(VueGtag, {
     
   })
 app.mount('#app')
-
-export { messages }
 
 /* ------------------------------ */
 

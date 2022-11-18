@@ -2,8 +2,12 @@
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
         <h1>Welcome</h1>
-        <div class="rsvp__info">2022년 12월 17일 토요일 <br /> 오후 4시 50분 <br /> 신도림 웨딩시티 8층 아모르홀</div>
-        <div class="rsvp__address">(서울시 구로구 새말로97 신도림 테크노마트 8층)</div>
+        <div class="rsvp__info">
+            {{ $t("message.date1") }} <br />
+            {{ $t("message.date2") }} <br />
+            {{ $t("message.date3") }} <br />
+        </div>
+        <div class="rsvp__address">{{ $t("message.date4") }}</div>
         <!-- <div class="rsvp__calendar">
             <el-calendar v-model=Value :range=Range ref="calendar" style="--el-calendar-selected-bg-color: #FC9483">
                 <template #header="{ date }">
@@ -37,7 +41,7 @@
             <!-- 궁금하신 사항이 있으시다면 연락주세요. -->
             <div class="rsvp__button">
                 <a href="https://open.kakao.com/o/sq8e99Ke" target="blank">
-                    <el-button :icon="UserFilled" :plain="true">카카오톡으로 연락하기</el-button>
+                    <el-button :icon="UserFilled" :plain="true">{{ $t("message.date5") }}</el-button>
                 </a>
             </div>
         </div>

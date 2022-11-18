@@ -7,7 +7,7 @@
     <h1>Share</h1>
     <div class="share">
       <!-- <el-button :icon="ChatRound" :plain="true">카카오톡으로 공유하기</el-button> -->
-      <el-button :icon="Link" :plain="true" @click="copyUrl()">청첩장 링크 복사하기</el-button>
+      <el-button :icon="Link" :plain="true" @click="copyUrl()">{{ $t("message.Share") }}</el-button>
     </div>
     <div class="ending">
         Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres.
