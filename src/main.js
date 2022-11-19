@@ -27,9 +27,6 @@ app.use(VueGtag, {
         } }
     
   })
-app.use(naver, {
-    clientID: "qD_LXeNSenCbonbA7YuE"
-})
 app.mount('#app')
 
 /* ------------------------------ */

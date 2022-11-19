@@ -5,7 +5,6 @@ import { ref } from 'vue'
 import map from "../assets/img/WeddingCity.png"
 import divider from "../assets/img/divider.png"
 import subwayShin from "../assets/img/subway_shin.jpeg"
-// import NaverMap from "./NaverMap.vue"
 
 const count = ref<number>(0)
 </script>
