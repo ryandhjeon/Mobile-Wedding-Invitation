@@ -17,6 +17,7 @@
     "vue-head": "^2.2.0",
     "vue-i18n": "^9.2.2",
     "vue-meta": "^2.4.0",
+    "vue-naver-maps": "^0.14.3",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {

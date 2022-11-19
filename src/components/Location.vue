@@ -1,3 +1,15 @@
+<script lang="ts" setup>
+import { ref } from 'vue'
+// import { PhoneFilled } from '@element-plus/icons-vue'
+// import { Guide } from '@element-plus/icons-vue'
+import map from "../assets/img/WeddingCity.png"
+import divider from "../assets/img/divider.png"
+import subwayShin from "../assets/img/subway_shin.jpeg"
+// import NaverMap from "./NaverMap.vue"
+
+const count = ref<number>(0)
+</script>
+
 <template>
     <div class="container fade-in">
         <el-image class="divider" :src="divider" loading="lazy"/>
@@ -50,17 +62,6 @@
     </div>
 </template>
 
-<script lang="ts" setup>
-    import { ref } from 'vue'
-    import { PhoneFilled } from '@element-plus/icons-vue'
-    import { Guide } from '@element-plus/icons-vue'
-    import map from "../assets/img/map.png"
-    import divider from "../assets/img/divider.png"
-    import subwayShin from "../assets/img/subway_shin.jpeg"
-
-    const count = ref<number>(0)
-</script>
-
 <style scoped>
 .map__grid {
     display: grid;
@@ -77,7 +78,6 @@
     /* font-size: 0.8em; */
     margin: 1em 0;
 }
-
 .map__description-button .el-button {
     margin: 0 0.5em;
 }

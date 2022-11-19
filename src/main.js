@@ -7,6 +7,7 @@ import router from "./router";
 import VueGtag from "vue-gtag";
 import "./assets/main.css";
 import { messages } from "./util/messages";
+import naver from 'vue-naver-maps'
 
 const i18n = createI18n({
     locale: 'ko', 
@@ -26,6 +27,9 @@ app.use(VueGtag, {
         } }
     
   })
+app.use(naver, {
+    clientID: "qD_LXeNSenCbonbA7YuE"
+})
 app.mount('#app')
 
 /* ------------------------------ */
