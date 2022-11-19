@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import map from "../assets/img/WeddingCity.png"
+import map from "../assets/img/WeddingCity.jpg"
 import divider from "../assets/img/divider.png"
 import subwayShin from "../assets/img/subway_shin.jpeg"
 
