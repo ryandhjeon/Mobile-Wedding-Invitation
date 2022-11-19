@@ -28,7 +28,7 @@
         width: 100%;
         margin: 0 auto; 
         color: white;
-        text-shadow: 2px 2px 2px #8c8c8c;
+        text-shadow: 1px 1px 1px #8c8c8c;
         text-transform: uppercase;
         letter-spacing: 0.5em;
         font-weight: bold;
