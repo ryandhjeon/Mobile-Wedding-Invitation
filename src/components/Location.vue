@@ -15,7 +15,7 @@ const count = ref<number>(0)
             <el-image class="map" :src="map"/>
         </div>
         <div class="map__description">
-            <span>서울시 구로구 새말로97 신도림 테크노마트 8층</span>
+            <span>{{ $t("message.Location7") }}</span>
             <span class="map__description-button"> 
                 <a href="https://naver.me/5pNERn5Z" target="blank"><el-button class="location_button" type="success" plain>{{ $t("message.Location1") }}</el-button></a>
                 <a href="http://kko.to/4Jfa8MDW_C" target="blank"><el-button class="location_button" type="warning" plain>{{ $t("message.Location2") }}</el-button></a>

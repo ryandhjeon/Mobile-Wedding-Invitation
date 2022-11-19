@@ -40,6 +40,7 @@ const messages = {
             Location4: `버스`,
             Location5: `주차`,
             Location6: `사용하실 교통수단을 눌러주세요`,
+            Location7: `서울시 구로구 새말로97 신도림 테크노마트 8층`,
             Share: `Share the url`,
 
         }
@@ -85,6 +86,7 @@ const messages = {
             Location4: `Bus`,
             Location5: `Parking`,
             Location6: `Choose the transportation of your preference`,
+            Location7: `97, Saemal-ro, Guro-gu, Seoul, 8th Floor`,
             Share: `Share the url`
         }
     }
