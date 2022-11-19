@@ -33,6 +33,7 @@
         letter-spacing: 0.5em;
         font-weight: bold;
         font-size: 0.8em;
+        border-radius: 10em;
     }
 </style>
 
