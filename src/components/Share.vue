@@ -15,7 +15,7 @@
         <div class="verse">1 Corinthians 13:4-8</div>
     </div>
 
-    <h3 class="signature">동헌 & 혜원</h3>
+    <h3 class="signature">혜원 & 동헌</h3>
   </div>
 </template>
 

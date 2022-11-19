@@ -18,8 +18,8 @@
         </div> 
         
         <div class="directory">
-            <div><span class="bold">{{ $t("message.son1") }}</span>{{ $t("message.son2") }}<span class="bold">{{ $t("message.son3") }}</span></div>
             <div><span class="bold">{{ $t("message.daughter1") }}</span>{{ $t("message.daughter2") }}<span class="bold">{{ $t("message.daughter3") }}</span></div>
+            <div><span class="bold">{{ $t("message.son1") }}</span>{{ $t("message.son2") }}<span class="bold">{{ $t("message.son3") }}</span></div>
         </div>
 
     </div>

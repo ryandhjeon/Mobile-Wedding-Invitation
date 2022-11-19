@@ -1,7 +1,7 @@
 const messages = {
     ko: {
         message: {
-            name: '전동헌 & 김혜원',
+            name: '김혜원 & 전동헌',
             quote1: '사람이 마음으로 자기의 길을 계획할지라도',
             quote2: '그 걸음을 인도하는 자는 여호와시니라',
             quote3: '잠언 16:9',
@@ -47,7 +47,7 @@ const messages = {
     },
     en: {
         message: {
-            name: 'Ryan & Hyewon',
+            name: 'Hyewon & Ryan',
             quote1: 'In their hearts humans plan their course',
             quote2: 'but the Lord establishes their steps.',
             quote3: 'Proverbs 16',
