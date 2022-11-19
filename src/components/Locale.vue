@@ -5,7 +5,7 @@
             :key="item.value" 
             :label="item.label"
             :value="item.value"
-        />
+        >{{item.label}}</option>
     </select>
 
     <!-- <div class="lang_selector">
@@ -45,9 +45,7 @@ export default {
     top: 0.5em;
     left: 0.5em;
     z-index: 999;
-    /* width: 3em; */
     box-shadow: 0;
-    /* background: transparent; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
