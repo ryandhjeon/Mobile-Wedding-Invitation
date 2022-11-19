@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-// import { PhoneFilled } from '@element-plus/icons-vue'
-// import { Guide } from '@element-plus/icons-vue'
 import map from "../assets/img/WeddingCity.png"
 import divider from "../assets/img/divider.png"
 import subwayShin from "../assets/img/subway_shin.jpeg"
