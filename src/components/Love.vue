@@ -107,7 +107,8 @@
             type: 'info'
         })
 
-        navigator.clipboard.writeText(s);    
+        // navigator.clipboard.writeText(s);    
+        this.$copyText(s);
     }
 
     // async function copy(s) {
