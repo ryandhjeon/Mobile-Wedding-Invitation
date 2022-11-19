@@ -1,14 +1,14 @@
 <template>
-    <el-select class="lang_selector" v-model="$i18n.locale" placeholder="Language" size="small">
+    <!-- <el-select class="lang_selector" v-model="$i18n.locale" placeholder="Language" size="small">
         <el-option 
             v-for="item in langs" 
             :key="item.value" 
             :label="item.label"
             :value="item.value"
         />
-    </el-select>
+    </el-select> -->
 
-    <!-- <div class="lang_selector">
+    <div class="lang_selector">
         <el-radio-group v-model="$i18n.locale">
             <el-radio-button v-model="$i18n.locale" 
                 v-for="item in langs" 
@@ -18,7 +18,7 @@
                 {{item.label}}
             </el-radio-button>
         </el-radio-group>
-    </div> -->
+    </div>
 
 </template>
 
