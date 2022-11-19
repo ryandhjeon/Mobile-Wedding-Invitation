@@ -32,6 +32,7 @@
         text-transform: uppercase;
         letter-spacing: 0.5em;
         font-weight: bold;
+        font-size: 0.8em;
     }
 </style>
 
