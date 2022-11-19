@@ -1,36 +1,44 @@
 <template>
-    <!-- <el-select class="locale-changer" v-model="$i18n.locale" placeholder="Language" size="small">
+    <el-select class="lang_selector" v-model="$i18n.locale" placeholder="Language" size="small">
         <el-option 
             v-for="item in langs" 
             :key="item.value" 
             :label="item.label"
             :value="item.value"
         />
-    </el-select> -->
-    <div class="lang_selector">
-        <el-radio-group class="lang_button" v-model="$i18n.locale" @click="isActive = !isActive">
-            <el-radio-button :value='en' :label="true">ENG</el-radio-button>
+    </el-select>
+
+    <!-- <div class="lang_selector">
+        <el-radio-group v-model="$i18n.locale">
+            <el-radio-button v-model="$i18n.locale" 
+                v-for="item in langs" 
+                :label="item.label" 
+                :value="item.value" 
+                :key="item.value">
+                {{item.label}}
+            </el-radio-button>
         </el-radio-group>
-    </div>
+    </div> -->
 
 </template>
 
 <script>
-
 export default {
   name: 'locale-changer',
-  data () {
+  data() {
     return { 
+        'ko': true,
+
         langs: [
             {
                 value: 'ko',
-                label: 'Korean'
+                label: 'KOR'
             },
             {
                 value: 'en',
-                label: 'English'
-            },            
-        ] 
+                label: 'ENG'
+            }
+        ]
     }
   }
 }
@@ -40,10 +48,11 @@ export default {
 
 .lang_selector {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 0.5em;
+    left: 0.5em;
     z-index: 999;
-    width: 4em;
+    width: 3em;
     box-shadow: 0;
 }
+
 </style>
