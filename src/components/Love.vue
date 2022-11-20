@@ -102,10 +102,6 @@
     const count = ref<number>(0)
 
     const copy = (s) => {
-        ElMessage({
-            message: '계좌번호가 복사되었습니다',
-            type: 'info'
-        })
         navigator.clipboard.writeText(s);       
         
         s.select();
