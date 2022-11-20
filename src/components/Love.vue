@@ -106,10 +106,38 @@
             message: '계좌번호가 복사되었습니다',
             type: 'info'
         })
-
-        // navigator.clipboard.writeText(s);    
-        this.$copyText(s);
+        if (!navigator.clipboard) {
+            s.select();
+            document.execCommand("copy");
+        } else {    
+            navigator.clipboard.writeText(s);       
+        }
     }
+    
+    
+    // if (!navigator.clipboard) {
+    //     document.execCommand("copy")    
+    // } else {
+    //     ElMessage({
+    //         message: '계좌번호가 복사되었습니다',
+    //         type: 'info'
+    //     })
+    //     navigator.clipboard.writeText(s);       
+    // }
+    // navigator.clipboard.writeText(s)
+    //     .then(() => alert("clipboard API를 통해 내용이 복사되었습니다"))
+    //     .catch(() => handleCopyForIE(s))
+    
+        
+
+    // const copy = (s) => {
+    //     ElMessage({
+    //         message: '계좌번호가 복사되었습니다',
+    //         type: 'info'
+    //     })
+
+    //     navigator.clipboard.writeText(s);       
+    // }
 
     // async function copy(s) {
     
