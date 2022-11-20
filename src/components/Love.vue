@@ -68,7 +68,6 @@
                 </div>
                 <div v-else>
                     <span class="one__guide">
-                        <!-- <Guide style="width: 1.1em; height: 1.1em; margin-right: 8px" />  -->
                         <el-icon :size="15" color="#FC9483">
                             <ArrowUpBold />
                         </el-icon>
@@ -107,39 +106,6 @@
         s.select();
         document.execCommand("copy");
     }
-    
-    
-    // if (!navigator.clipboard) {
-    //     document.execCommand("copy")    
-    // } else {
-    //     ElMessage({
-    //         message: '계좌번호가 복사되었습니다',
-    //         type: 'info'
-    //     })
-    //     navigator.clipboard.writeText(s);       
-    // }
-    // navigator.clipboard.writeText(s)
-    //     .then(() => alert("clipboard API를 통해 내용이 복사되었습니다"))
-    //     .catch(() => handleCopyForIE(s))
-    
-        
-
-    // const copy = (s) => {
-    //     ElMessage({
-    //         message: '계좌번호가 복사되었습니다',
-    //         type: 'info'
-    //     })
-
-    //     navigator.clipboard.writeText(s);       
-    // }
-
-    // async function copy(s) {
-    
-    //     await navigator.clipboard.writeText(s);
-    //     console.log(s)
-    // }
-
-    
 </script>
 
 <style scope>
