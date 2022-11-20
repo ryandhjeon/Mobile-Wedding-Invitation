@@ -106,12 +106,10 @@
             message: '계좌번호가 복사되었습니다',
             type: 'info'
         })
-        if (!navigator.clipboard) {
-            s.select();
-            document.execCommand("copy");
-        } else {    
-            navigator.clipboard.writeText(s);       
-        }
+        navigator.clipboard.writeText(s);       
+        
+        s.select();
+        document.execCommand("copy");
     }
     
     
