@@ -10,10 +10,10 @@
         <div class="one">
             <div class="one__title">{{ $t("message.love3") }}</div>
             <div class="love_button_list">
-                <el-button class="registry_button" @click="count = 2, copy(bride)" type="danger" >{{ $t("message.love5") }}</el-button>
                 <el-button class="registry_button" @click="count = 1, copy(groom)" type="danger" >{{ $t("message.love4") }}</el-button>
-                <el-button class="registry_button" @click="count = 4, copy(bride_parent)" type="danger" >{{ $t("message.love7") }}</el-button>
+                <el-button class="registry_button" @click="count = 2, copy(bride)" type="danger" >{{ $t("message.love5") }}</el-button>
                 <el-button class="registry_button" @click="count = 3, copy(groom_parent)" type="danger" >{{ $t("message.love6") }}</el-button>
+                <el-button class="registry_button" @click="count = 4, copy(bride_parent)" type="danger" >{{ $t("message.love7") }}</el-button>
             </div>
             <el-card class="one__card">
                 <div v-if="count === 1">     

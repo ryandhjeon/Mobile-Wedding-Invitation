@@ -1,7 +1,7 @@
 const messages = {
     ko: {
         message: {
-            name: '김혜원 & 전동헌',
+            name: '전동헌 & 김혜원',
             quote1: '사람이 마음으로 자기의 길을 계획할지라도',
             quote2: '그 걸음을 인도하는 자는 여호와시니라',
             quote3: '잠언 16:9',
